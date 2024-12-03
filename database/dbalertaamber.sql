@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 05-11-2024 a las 00:59:35
--- Versión del servidor: 10.4.32-MariaDB
--- Versión de PHP: 8.2.12
+-- Host: 127.0.0.1
+-- Generation Time: Dec 03, 2024 at 11:00 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `dbalertaamber`
+-- Database: `dbalertaamber`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `anotaciones`
+-- Table structure for table `anotaciones`
 --
 
 CREATE TABLE `anotaciones` (
@@ -38,7 +38,7 @@ CREATE TABLE `anotaciones` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `galeria`
+-- Table structure for table `galeria`
 --
 
 CREATE TABLE `galeria` (
@@ -50,7 +50,7 @@ CREATE TABLE `galeria` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `ninos`
+-- Table structure for table `ninos`
 --
 
 CREATE TABLE `ninos` (
@@ -82,48 +82,74 @@ CREATE TABLE `ninos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Índices para tablas volcadas
+-- Dumping data for table `ninos`
+--
+
+INSERT INTO `ninos` (`ID`, `nombre`, `fechaNacimiento`, `ciudadNacimiento`, `descripcionNino`, `fotoPrincipal`, `nombreMadre`, `fechaNacimientoMadre`, `ocupacionMadre`, `ciudadNacimientoMadre`, `telContactoMadre`, `otroTelContactoMadre`, `direccionResidenciaMadre`, `otrosDatosContactoMadre`, `nombrePadre`, `fechaNacimientoPadre`, `ciudadNacimientoPadre`, `ocupacionPadre`, `telContactoPadre`, `otroTelContactoPadre`, `direccionResidenciaPadre`, `otrosDatosContactoPadre`, `fechaUltimaVista`, `lugarUltimaVista`, `detallesDesaparicion`) VALUES
+(1, 'Carlitos Pérez', '2016-11-01', 'Bogotá', 'Niño:\r\n- Edad: 10 años\r\n- Pelo: Castaño claro, corto y despeinado\r\n- Ojos: Cafés.\r\n- Sonrisa: Ancha, con dientes un poco separados\r\n- Rostro: Redondo, con una nariz pequeña y recta\r\n- Cuerpo: Delgado, con brazos y piernas largos\r\n- Vestimenta: Camiseta blanca y pantalones cortos azules, con zapatillas deportivas rojas', '1.jpg', 'Josefina Gómez', '1995-09-07', 'g bfg', 'Cartagena', 123464, 314874, 'dgh fbñdj kvdjñlvcñs dvjs hv ñsv{  ', 'svcsnh s hcuds c sa dc a cas csa ñc as', 'Akjh ds cj d c sdzc ', '1990-11-01', 'Ibagué - Tolima', 'dfds frs gdfvgdfbdgb', 13145646, 49899, 'fv df dfgvdfvafewgtehb', 'sfg rgegvet', '2024-11-04', 'Bogotá, barrio Carvajal', 'Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '),
+(2, 'Sofía Canavaro', '2016-10-01', 'Bogotá', 'Niña:\r\n- Edad: 10 años\r\n- Pelo: Castaño claro, corto y despeinado\r\n- Ojos: Cafés.\r\n- Sonrisa: Ancha, con dientes un poco separados\r\n- Rostro: Redondo, con una nariz pequeña y recta\r\n- Cuerpo: Delgado, con brazos y piernas largos\r\n- Vestimenta: Camiseta blanca y pantalones cortos azules, con zapatillas deportivas rojas', '2.jpg', 'Josefina Rodríguez', '1995-09-07', 'g bfg', 'Cartagena', 123464, 314874, 'dgh fbñdj kvdjñlvcñs dvjs hv ñsv{  ', 'svcsnh s hcuds c sa dc a cas csa ñc as', 'Akjh ds cj d c sdzc ', '1990-11-01', 'Ibagué - Tolima', 'dfds frs gdfvgdfbdgb', 13145646, 49899, 'fv df dfgvdfvafewgtehb', 'sfg rgegvet', '2024-11-04', 'Bogotá, barrio Carvajal', ''),
+(3, 'Bebé feliz', '0000-00-00', '', '', '3.jpg', '', '0000-00-00', '', '', 0, 0, '', '', '', '0000-00-00', '', '', 0, 0, '', '', '2024-11-30', 'Cartagena, cerca del terminal de transportes', ''),
+(4, 'Otro bebé', '0000-00-00', '', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ', '4.jpg', '', '0000-00-00', '', '', 0, 0, '', '', '', '0000-00-00', '', '', 0, 0, '', '', '2024-12-01', 'Ibagué, barrio Restrepo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '),
+(5, 'Barry Allen', '2021-11-11', 'Cali - Colombia', 'Edad: 3 años\r\n\r\nPelo: Pelo largo y rizado, de color rubio claro, con algunos mechones escapados de su cola de caballo.\r\n\r\nOjos: Ojos grandes y expresivos, de color azul claro, con pestañas largas y finas.\r\n\r\nRostro: Rostro ovalado y sonrosado, con una nariz pequeña y recta, y una boca pequeña con labios finos y una sonrisa amplia.\r\n\r\nExpresión: Expresión de alegría y curiosidad, con una mirada brillante y una sonrisa que muestra sus dientes pequeños.\r\n\r\nCuerpo: Cuerpo pequeño y delgado, con brazos y piernas largos y flacos.', '5.jpg', 'María', '1980-02-09', 'Empresaria', 'Ibagué', 547578, 0, 'Calle 8A # 1B Este 94', '', '', '0000-00-00', '', '', 0, 0, '', '', '2024-12-03', 'Cali - Plaza de mercado', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa'),
+(6, 'Joselito Carnaval', '2022-11-11', 'Barranquilla', 'Warning: move_uploaded_file(uploads/5.jpg): Failed to open stream: No such file or directory in C:xampphtdocsPSP-Subgrupo-1-Amberhtmlagregar.php on line 26\r\n\r\nWarning: move_uploaded_file(): Unable to move \"C:xampp	mpphpAD4F.tmp\" to \"uploads/5.jpg\" in C:xampphtdocsPSP-Subgrupo-1-Amberhtmlagregar.php on line 26\r\nLo siento, hubo un error al subir tu archivo.Nuevo registro creado correctamente\r\n', '5.jpg', 'Ana', '1990-12-12', 'Doctora', 'Bogotá', 14654, 0, 'Calle 8A # 1B Este 94', '', '', '0000-00-00', '', '', 0, 0, '', '', '2024-12-03', 'Ibagué, barrio Restrepo', 'Lorem Ipsum'),
+(7, '1', '0111-11-11', '1', '11', '73d1ac75c85979443d5006e2ae578629.jpg', '1', '0011-11-11', '1', '1', 1, 0, '1', '', '', '0000-00-00', '', '', 0, 0, '', '', '0001-11-11', '1', '1'),
+(8, '2', '0022-02-22', '2', '2', '73d1ac75c85979443d5006e2ae578629.jpg', '2', '0002-02-22', '2', '2', 2, 0, '2', '', '', '0000-00-00', '', '', 0, 0, '', '', '0022-02-22', '2', '2'),
+(9, '3', '0003-03-31', '3', '3', 'Harry Potter Phone Wallpapers - Top Free Harry Potter Phone Backgrounds - WallpaperAccess.jpeg', '3', '0033-03-31', '3', '3', 3, 0, '3', '', '', '0000-00-00', '', '', 0, 0, '', '', '0033-03-31', '3', '3'),
+(10, '3', '0003-03-31', '3', '3', 'Harry Potter Phone Wallpapers - Top Free Harry Potter Phone Backgrounds - WallpaperAccess.jpeg', '3', '0033-03-31', '3', '3', 3, 0, '3', '', '', '0000-00-00', '', '', 0, 0, '', '', '0033-03-31', '3', '3'),
+(11, '3', '0003-03-31', '3', '3', 'Harry Potter Phone Wallpapers - Top Free Harry Potter Phone Backgrounds - WallpaperAccess.jpeg', '3', '0033-03-31', '3', '3', 3, 0, '3', '', '', '0000-00-00', '', '', 0, 0, '', '', '0033-03-31', '3', '3'),
+(12, '1', '0011-11-11', '1', '1', '73d1ac75c85979443d5006e2ae578629.jpg', '1', '0001-11-11', '1', '1', 1, 0, '1', '', '', '0000-00-00', '', '', 0, 0, '', '', '0011-11-11', '1', '1'),
+(13, '2', '0022-02-22', '22', '2', 'Sandro_Botticelli_069.jpg', '2', '0022-02-22', '2', '2', 2, 0, '2', '', '', '0000-00-00', '', '', 0, 0, '', '', '0002-02-22', '2', '2'),
+(14, '1', '0001-11-11', '1', '1', 'Sandro_Botticelli_069.jpg', '1', '0111-11-11', '111', '11', 11, 0, '11', '', '', '0000-00-00', '', '', 0, 0, '', '', '0011-11-11', '1', '1'),
+(15, '22', '0222-02-22', '22', '2222', 'The_Leaning_Tower_of_Pisa_SB.jpeg.jpeg', '222', '0022-02-22', '22', '2', 22, 0, '222', '', '', '0000-00-00', '', '', 0, 0, '', '', '2222-02-22', '22', '222'),
+(16, '55', '0555-05-05', '5555', '55', 'hombre-vitruviano.webp', '55', '0555-05-05', '55', '555', 555, 0, '555', '', '', '0000-00-00', '', '', 0, 0, '', '', '0555-05-05', '555', '555'),
+(17, '33', '0033-03-31', '33', '333', 'virgen-canciller-rolin-van-eyck-pintura-gotica.jpg', '33', '0333-03-31', '333', '333', 3333, 0, '333', '', '', '0000-00-00', '', '', 0, 0, '', '', '0033-03-31', '333', '33'),
+(18, '11', '0011-11-11', '111', '111', 'Sandro_Botticelli_069.jpg', '1111', '0011-11-11', '111', '11', 11111, 0, '11', '', '', '0000-00-00', '', '', 0, 0, '', '', '0011-11-11', '11', '11'),
+(19, 'Niño Pequeño', '2016-11-11', 'Bogotá', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ', '1.jpg', 'María', '1980-02-04', 'Gerente de una Multinacional', 'New York', 2147483647, 0, 'Calle 8A # 1B Este 94', '', '', '0000-00-00', '', '', 0, 0, '', '', '2024-12-02', 'Bogotá. Parque Simón Bolivar', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. '),
+(20, 'Niña', '2023-06-05', 'Medellín', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ', '2.jpg', 'Josefinha Pintayo', '1982-12-12', 'Congresista', 'Santa Marta', 31654, 0, 'Calle 45 78 65', '', '', '0000-00-00', '', '', 0, 0, '', '', '2024-12-11', 'Medellín', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `anotaciones`
+-- Indexes for table `anotaciones`
 --
 ALTER TABLE `anotaciones`
   ADD PRIMARY KEY (`ID_anotacion`);
 
 --
--- Indices de la tabla `galeria`
+-- Indexes for table `galeria`
 --
 ALTER TABLE `galeria`
   ADD PRIMARY KEY (`ID_foto`);
 
 --
--- Indices de la tabla `ninos`
+-- Indexes for table `ninos`
 --
 ALTER TABLE `ninos`
   ADD PRIMARY KEY (`ID`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `anotaciones`
+-- AUTO_INCREMENT for table `anotaciones`
 --
 ALTER TABLE `anotaciones`
   MODIFY `ID_anotacion` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `galeria`
+-- AUTO_INCREMENT for table `galeria`
 --
 ALTER TABLE `galeria`
   MODIFY `ID_foto` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de la tabla `ninos`
+-- AUTO_INCREMENT for table `ninos`
 --
 ALTER TABLE `ninos`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Autoincremental, ID del niño en el sistema';
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Autoincremental, ID del niño en el sistema', AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

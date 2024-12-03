@@ -1,0 +1,26 @@
+.profile-placeholder {
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 100px;
+    margin: 20px;
+    margin-right: 50px;
+    color: #777;
+}
+.report-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.report-card img {
+    margin-right: 15px;
+}
+.img-tamano {
+    height: 250px;
+    width: auto;
+}
